@@ -2,23 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>User Registration Form</title>
-    <link rel="stylesheet" href="style.css">
+    <title>User Data Display</title>
+    <link rel="stylesheet" href="fetch-data.css">
 </head>
 <body>
-    <form id="registration-form">
-        <label for="username">Username:</label>
-        <input type="text" id="username" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" required>
-
-        <label for="password">Password:</label>
-        <input type="password" id="password" required>
-
-        <button type="submit">Register</button>
-        <div id="form-feedback"></div>
-    </form>
-    <script src="script.js"></script>
+    <div id="content">
+        <h1>User List</h1>
+        <div id="api-data">Loading user data...</div>
+    </div>
+    <script src="fetch-data.js"></script>
 </body>
 </html>
